@@ -6,7 +6,7 @@
 # Created Date: Wednesday, August 16th 2017, 3:54:03 pm
 # Author: JX
 # -----
-# Last Modified: Wed Aug 16 2017
+# Last Modified: Tue Aug 22 2017
 # Modified By: JX
 # -----
 # Copyright (c) 2017 SYSU-SDCS-RJX
@@ -19,9 +19,9 @@ from PIL import Image
 import os
 import os.path
 
-for parent, dirnames, filenames in os.walk("../data"):
+for parent, dirnames, filenames in os.walk("../data/test"):
     for filename in filenames:
-        im = Image.open("../data/" + filename)
+        im = Image.open("../data/test/" + filename)
         im = im.convert("P")
 
         if (im.size[0] > im.size[1]):
